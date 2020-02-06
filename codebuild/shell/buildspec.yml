@@ -8,3 +8,4 @@ phases:
     commands:
       - echo buildspec_yml_env:${buildspec_yml_env}
       - echo project_env:${project_env}
+      - echo ${CODEBUILD_SRC_DIR}
