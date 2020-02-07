@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   exported-variables:
-    ACCOUNT_ID=${CODEBUILD_BUILD_ARN} && IFS=':' && set -- $ACCOUNT_ID && ACCOUNT_ID=$5
+    - ACCOUNT_ID=${CODEBUILD_BUILD_ARN} && IFS=':' && set -- $ACCOUNT_ID && ACCOUNT_ID=$5
 
 phases:
   build:
